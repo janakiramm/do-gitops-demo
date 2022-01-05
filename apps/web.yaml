@@ -10,14 +10,16 @@ spec:
   replicas: 3
   selector:
       matchLabels:
-        name: web
+        name: web  
   template:
     metadata:
       labels:
         name: web
     spec:
       containers:
-      - name: web
+      - name: web 
         image: janakiramm/mywebapp:v1
         ports:
         - containerPort: 80
+
+        
